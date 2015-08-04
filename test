@@ -1,8 +1,6 @@
 __author__ = 'DShawn Payton'
 import os
 
-
-
 # Intro and rules
 
 os.system("say 'Welcome to Why Do I know This, part 2!'")
