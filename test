@@ -1,0 +1,303 @@
+__author__ = 'DShawn Payton'
+import os
+
+
+
+# Intro and rules
+
+os.system("say 'Welcome to Why Do I know This, part 2!'")
+print "Hello. Welcome To Why Do I Know This, part 2!"
+os.system("say 'Please enter your name, but do not worry, I will not try to say it.'")
+name = raw_input("Type in your name: ")
+print "Hello ", name,". This is a game that will challenge your knowledge on the most random of subjects!"
+os.system("say 'Cool. This is a game that will challenge your knowledge on the most random of subjects!'")
+print """Just enter the letter for the answer that you think is correct.
+If you ever want to exit the game, just type in the word 'quit'.
+"""
+os.system("say 'Just enter the letter of the answer that you think is correct.'")
+os.system("say 'If you ever want to exit the game, just type in the word quit.'")
+os.system("say 'Alright, here we go with the first question!'")
+
+# First Question
+os.system("say 'What team did Kobe Bryant score 81 points against?'")
+print """Okay %s, here we go!
+What team did Kobe Bryant score 81 points against?
+\ta Seattle Supersonics
+\tb Washington Bullets
+\tc Toronto Raptors
+\td Chicago Bulls
+\te New York Knicks
+""" % name
+firstAnswer = raw_input("Pick a team, any team!: ")
+
+# first answer
+if firstAnswer == "c":
+    a = 10
+    os.system("say 'Correct! It was a stellar performance against the Toronto Raptors!'")
+
+# quit handler
+elif firstAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+
+else:
+    a = 0
+    os.system("say 'Sorry, that is incorrect. I hope this is not the beginning of a trend of wrong answers from you.'")
+
+
+# Second Question
+os.system("say 'Okay, time for question number 2.'")
+os.system("say 'Which one of these stories in not written by legendary horror writer Stephen King?'")
+print """ Okay,%s, time for question number 2.
+Which one of these stories was not written by legendary horror writer Stephen King?
+\ta. Shawshank Redemption
+\tb. The Green Mile
+\tc. The Stand
+\td. In The Mouth Of Madness
+\te. Insomnia
+""" % name
+secondAnswer = raw_input("He wrote a lot of creepy stuff. What do you think? ")
+
+# Second Answer
+if secondAnswer == "d":
+    b = 10
+
+    os.system("say 'Correct! Although they do mention him in the movie!'")
+
+# quit handler
+
+elif secondAnswer == "quit":
+
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+
+else:
+    b = 0
+
+    os.system("say 'Wrong. Or, as the kids today say, FAIL!'")
+
+# Third Question
+
+os.system("say 'Time for question number 3.'")
+os.system("say 'What is the universal speed limit?'")
+print """ What is the universal speed limit?
+\ta. 186,000 miles per minute
+\tb. 209,000 meters per second
+\tc. 50 million millimeters per hour
+\td. 671 million miles per hour
+\te. 55 miles per hour
+"""
+thirdAnswer = raw_input("What? Your guess is as good as mine...: ")
+
+# third answer
+if thirdAnswer == "d":
+    c = 10
+
+    os.system("say 'Winner winner chicken dinner! You are correct!'")
+# quit handler
+elif thirdAnswer == "quit":
+    print "Bye Bye, %s!" % name
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    c = 0
+
+    os.system("say 'No. You are wrong. And you smell funny. Did you pass gas?'")
+
+# Question 4
+
+os.system("say 'Okay, on to the next one.'")
+print "Okay %s, on to the next one." % name
+os.system("say 'What is the legal name of the hip hop legend Busta Rhymes?'")
+print """%s, What is the legal name of hip hop legend Busta Rhymes?
+\ta. Curtis Jackson
+\tb. Trevor Tahiem Smith Jr.
+\tc. Roscoe Williams
+\td. Buster Brown
+\te. Oshea Jackson
+""" % name
+fourthAnswer = raw_input("Take a wild guess! ")
+
+# fourth Answer
+
+if fourthAnswer == "b":
+    d = 10
+    os.system("say 'Yes! He is one of the best wordsmiths ever, and his flow is crazy like Trevor from G T A 5!'")
+
+# quit handler
+elif fourthAnswer == "quit":
+    print "Bye Bye, %s!" % name
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    d = 5
+    os.system("say 'Incorrect. But I did not know until I googled it, so here is 5 charity points.'")
+
+    os.system("say 'Do not say that I never did anything nice for you.'")
+
+# fifth question
+
+os.system("say 'Alright, here is question number 5.'")
+os.system("say 'Which one of these companies is the oldest?'")
+print """ Alright, %s. Which one of these companies is the oldest?
+\ta. Commodore International
+\ta. Atari
+\tc. Nintendo
+\td. Sony
+\te. IBM
+""" % name
+fifthAnswer = raw_input("I have no idea: ")
+
+# fifth Answer
+if fifthAnswer == "c":
+    e = 10
+    os.system("say 'Yes! Founded September 23, 1889, Nintendo is the oldest!'")
+
+# quit handler
+elif fifthAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    e = 0
+    os.system("say 'Wrong. Ignore any compliments I gave you before.'")
+
+
+# sixth question
+os.system("say 'Okay, time for question six!'")
+print "Okay %s, time for question 6!" % name
+os.system("say 'Who is the lead singer for the band Queens Of The Stone Age?'")
+print """Who is the lead singer for the band Queens Of The Stone Age?
+\ta. Freddie Mercury
+\tb. Mick Jagger
+\tc. Dave Grohl
+\td. Mike Patton
+\te. Josh Homme
+"""
+sixthAnswer = raw_input("Never heard of em. What is your guess?: ")
+
+# sixth Answer
+if sixthAnswer == "e":
+    f = 10
+    os.system("say 'Yes! You are right! Josh Hommay is awesome!'")
+# quit handler
+elif sixthAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    f = 0
+    os.system("say 'Nope. You are wrong. Just like my ex wife. And my teachers. And my parole Officers.'")
+
+# seventh question
+
+os.system("say 'Okay, time for your next question. Make me proud, okay?'")
+os.system("say 'What is a palindrome?'")
+print """What is a palindrome?
+\ta. The formal name for a throne for a prince
+\tb. A word, phrase, number or sequence that reads the same forwards and backwards
+\tc. The new spy drones created by the Illuminati
+\td. A type of plant found only in extremely warm climates
+\te. The sound a nuclear reactor emits every four minutes, which lasts for two minutes each
+"""
+seventhAnswer = raw_input("Who knows: ")
+
+# seventh Answer
+if seventhAnswer == "b":
+    g = 10
+    os.system("say 'Awesome! You are correct! You are very sexy when you are right...'")
+# quit handler
+elif seventhAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    g = 0
+    os.system("say 'You. Are. Wrong. Ha ha ha ha ha! Derp!'")
+
+# eighth question
+os.system("say 'Moving right along, here is another question.'")
+os.system("say 'What is Storyville?'")
+print """What is Storyville?
+\ta. An imaginary place next to the Land Of Make Believe and Kingdom Come
+\tb. The red light district in New Orleans from 1897 to 1917
+\tc. The place where they filmed The Lord Of The Rings
+\td. The original name for Wonderland in Lewis Carroll's story, Through The Looking Glass
+\te. Where all lies come from
+"""
+eighthAnswer = raw_input("What? Where? I don't know. You try: ")
+
+# eighth Answer
+if eighthAnswer == "b":
+    h = 10
+    os.system("say 'Yes! You are right! You are a smart, funny and cool person!'")
+# quit handler
+elif eighthAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    h = 0
+    os.system("say 'You are wrong, and I enjoy telling you that every chance I get, you inferior human.'")
+
+# ninth Question
+os.system("say 'Time for another question, and I do not care if you are not ready.'")
+os.system("say 'What is the mass of the planet Earth?'")
+print """What is the mass of the planet Earth?
+\ta. 5.972 x 10^24 kg
+\tb. 800 million tons
+\tc. 170,023,541,452 lbs
+\td. 250 shit tons
+\te. we have no idea
+"""
+ninthAnswer = raw_input("How would I know?: ")
+
+# ninth Answer
+if ninthAnswer == "a":
+    i = 10
+    os.system("say 'Correct. Either you googled it, or you are as big of a nerd as I am, but it is all good!'")
+# quit handler
+elif ninthAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+elif ninthAnswer == "d":
+    i = 4
+    os.system("say 'Since I cannot say how much a shit ton weighs, this might be right, so you get some points.'")
+else:
+    i = 0
+    os.system("say 'Wrong should be your new name. You are so good at being wrong!'")
+
+# tenth question
+os.system("say 'Here is the last question! You made it this far without quitting!'")
+os.system("say 'How many people were featured in the original Wu Tang Clan?'")
+print """Okay, %s,how many people were in the original Wu Tang Clan?
+\ta. 7
+\tb. 14
+\tc. 9
+\td. 24
+\te. 11
+""" % name
+tenthAnswer = raw_input("Good question. what do you think? ")
+
+# tenth Answer
+if tenthAnswer == "c":
+    j = 10
+    os.system("say 'Yes! The RZA, The GZA, U God, Ghostface Killa, Method Man, Ol Dirty Bastard, Inspectah Deck, Masta Killa, Raekwon'")
+# quit handler
+elif tenthAnswer == "quit":
+    os.system("say 'Bye Bye, hope you come back!'")
+    exit()
+else:
+    j = 0
+    os.system("say 'You are wrong! Protect Ya neck!'")
+
+finalscore = a + b + c + d + e + f + g + h + i + j
+os.system("say 'Thanks for playing Why Did I Know This part 2!'")
+os.system("say 'Here are your results'")
+print "Your final score is %d." % finalscore
+
+if finalscore < 60:
+    os.system("say 'You failed. Please try again.'")
+else:
+    os.system("say 'You passed! Good Job!'")
+
+
+
+
+
